@@ -39,9 +39,9 @@ init =
 view : Model -> Html Msg
 view model =
     div [ id "container" ]
-        [ button [ onClick Increment ] [ text "+" ]
-        , div [] [ text (String.fromInt model) ]
-        , button [ onClick Decrement ] [ text "-" ]
+        [ div [ class "draggable" ] [ text "Draggable Div" ]
+        , div [ class "droppable" ] [ text "Droppable Div" ]
+        , div [ class "droppable" ] [ text "Droppable Div" ]
         ]
 
 
